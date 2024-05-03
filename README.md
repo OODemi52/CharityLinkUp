@@ -1,110 +1,55 @@
-# [Horizon UI Tailwind CSS NextJS ⚡️](https://horizon-ui.com/horizon-tailwind-react-nextjs) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=Check%20Horizon%20UI,%20the%20trendiest%20open-source%20admin%20dashboard%20template%20for%20Tailwind%20CSS,%20React%20JS%20and%20NextJS%20-%20https%3A//horizon-ui.com/)
+# Charity LinkUp💙 - Charities Merged into One Central Platform
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
-[![GitHub issues open](https://img.shields.io/github/issues/horizon-ui/horizon-tailwind-react-nextjs.svg?maxAge=2592000)](https://github.com/horizon-ui/horizon-tailwind-react-nextjs/issues?q=is%3Aopen+is%3Aissue)
+<p align="center">
+  <img width="500" alt="Screenshot 2024-05-03 at 1 16 49 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/2595f778-fefd-4c44-b95b-b0c83cd7e9b4">
+</p>
 
-<p>&nbsp;</p>
 
-[<img alt="Horizon UI Tailwind CSS NextJS" src="https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png" /> ](https://github.com/horizon-ui/horizon-tailwind-react-nextjs)
 
-<p>&nbsp;</p>
+The Charity Linkup Website project aims to create a centralized platform where multiple charity organizations can showcase their missions, initiatives, and donation opportunities. The website will serve as a one-stop destination for users interested in supporting various causes and will provide easy access to information about different charities, their projects, and how individuals can contribute. This project was completed for the GWU MSIST 2024 Capston Course.
 
-Get started and build your dream web app with Horizon UI Tailwind CSS NextJS, the trendiest & innovative Open Source Admin Template for Tailwind CSS, React & NextJS!
 
----
+## User Facing Pages
+### Landing Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 16 49 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/5f7cf4bb-9226-4518-abbf-e0ae875c4f5d">
 
-### Introduction
+### About Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 18 47 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/01fa87dd-cd98-424e-8cd1-6d805d5dba9e">
 
-Designed for those who like modern UI elements and beautiful websites. Made of
-hundred of elements, designed blocks, and fully coded pages, Horizon UI is ready
-to help you create stunning websites and web apps.
+### Contact Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 18 57 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/018a487b-4555-4766-bcc9-66db0dda6321">
 
-Save hundreds of hours trying to create and develop a dashboard from scratch.
-The fastest, most responsive & trendiest dashboard is here. Seriously.
+### Browse Cause Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 17 02 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/fbb839a1-70f4-4f2b-a4c7-129fb65902d8">
 
-With Horizon UI you will find many examples of pages like NFTs Pages,
-Authentication Pages, Profile, and so on. Just choose between a Basic Design or a
-cover and you are good to go!
+### Browse Charities Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 17 59 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/53335291-3bcc-41c8-8ad5-ba1e47b122a2">
 
-### 🎉 [NEW] Horizon UI Components
+### Charity Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 18 23 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/ba06af39-df89-482a-a2c7-d1b7cf3bf8ee">
 
-All the main components from both versions. This will help you to see and interact with all & the latest added components of Horizon (also, new components are on the way, stay tuned)! ⚡️
-<a href="https://horizon-ui.com/components/?ref=readme-horizon-tailwind-nextjs" target="_blank">See all components</a>
 
-### Documentation
+## Admin Facing Pages
+## Sign Up Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 19 13 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/e1b8831d-77f3-4319-a79f-02564415bf3d">
 
-Each element is well presented in a very complex documentation. You can read
-more about the <a href="https://horizon-ui.com/docs-tailwind/docs/react/installation?ref=readme-horizon-tailwind-nextjs" target="_blank">documentation
-here.</a>
+## Sign In Page
+<img width="1728" alt="Screenshot 2024-05-03 at 1 19 05 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/1291cb1e-2be8-49db-8674-83d3d39c92af">
 
-### Quick Start
+## Dashboard Page
+<img width="1728" alt="Screenshot 2024-05-03 at 2 20 42 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/7d45293f-7194-4c89-9d57-038cf560ed6c">
 
-Install Horizon UI by running either of the following:
+## Profile
+<img width="1728" alt="Screenshot 2024-05-03 at 2 21 14 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/e947550d-4f08-4a39-befe-200881d8e02f">
 
-- Install NodeJS LTS from [NodeJs Official Page](https://nodejs.org/en/?ref=horizon-documentation)
-  (NOTE: Product only works with LTS version)
+## Content Management
+<img width="1728" alt="Screenshot 2024-05-03 at 2 21 44 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/8f46c256-0f3e-4e36-9494-8581990b7173">
 
-- Install Yarn CLI from [Yarn Official Page](https://yarnpkg.com/cli/install?ref=horizon-documentation)
+## Generate Reports
+<img width="1728" alt="Screenshot 2024-05-03 at 2 22 22 AM" src="https://github.com/OODemi52/CharityLinkUp/assets/76265069/99162dac-9fcf-4d50-847c-0859adb0a920">
 
-Clone the repository with the following command:
 
-```bash
-git clone https://github.com/horizon-ui/horizon-tailwind-react-nextjs.git
-```
 
-Run in terminal this command:
 
-```bash
-yarn install
-```
 
-Then run this command to start your local server
 
-```bash
-yarn dev
-```
-
-### Example Pages
-
-If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages. You will be able to quickly set up the basic structure for your web project. View <a href="https://horizon-ui.com/horizon-tailwind-react-nextjs/?ref=readme-horizon-tailwind-nextjs" target="_blank">example pages here.</a>
-
-### Versions
-
-| Free Version                                                                                                                                         | PRO Version                                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![Horizon UI Tailwind NextJS](https://i.ibb.co/mtLkcYL/horizon-ui-nextjs-free.png)](https://www.horizon-ui.com/?ref=readme-horizon-tailwind-nextjs) | [![Horizon UI NextJS PRO](https://i.ibb.co/sPSYxGv/horizon-2-0-pro-presentation-image.png)](https://www.horizon-ui.com/pro?ref=readme-horizon-tailwind-nextjs) |
-
-### Figma Version
-
-Horizon UI is available in Figma format as well! Check it out on Figma
-Community! 🎨
-[See the Horizon UI Figma design files](https://bit.ly/horizon-figma)
-
-### Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Horizon UI. Here are
-some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Horizon UI Dashbaord.
-   Check the CHANGELOG from your dashboard on our
-   [CHANGE LOG File](https://github.com/horizon-ui/horizon-tailwind-react-nextjs/blob/main/CHANGELOG.md?ref=readme-horizon-tailwind-nextjs).
-2. Providing us reproducible steps for the issue will shorten the time it takes
-   for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you
-   encountered the issue might help.
-
----
-
-### Community
-
-Connect with the community! Feel free to ask questions, report issues, and meet
-new people that already use Horizon UI!
-
-💬 [Join the #HorizonUI Discord Community!](https://discord.gg/f6tEKFBd4m)
-
-### Copyright and license
-
-⭐️ [Copyright 2023 Simmmple ](https://www.horizon-ui.com/?ref=readme-horizon-tailwind-nextjs)
-
-📄 [Horizon UI License](https://www.horizon-ui.com/?ref=readme-horizon-tailwind-nextjs)
