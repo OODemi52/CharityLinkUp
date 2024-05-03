@@ -10,12 +10,9 @@ const Project = () => {
     <Card extra={'w-full p-4 h-full'}>
       <div className="mb-8 w-full">
         <p className="text-xl font-bold text-navy-700 dark:text-white">
-          All projects
+          Uploaded Content
         </p>
-        <p className="mt-2 text-base text-gray-600">
-          Here you can find more details about your projects. Keep you user
-          engaged by providing meaningful information.
-        </p>
+        CONTENT WILL BE MAPPED HERE
       </div>
       {/* Project 1 */}
       <div className="flex w-full items-center justify-between rounded-2xl bg-white p-3 shadow-2xl shadow-gray-200 dark:!bg-navy-700 dark:shadow-none">
@@ -31,16 +28,10 @@ const Project = () => {
           </div>
           <div className="ml-4">
             <p className="text-base font-medium text-navy-700 dark:text-white">
-              Technology behind the Blockchain
+              CHARITY 1
             </p>
             <p className="mt-2 text-sm text-gray-600">
-              Project #1 .
-              <a
-                className="ml-1 font-medium text-brand-500 hover:text-brand-500 dark:text-white"
-                href=" "
-              >
-                See product details
-              </a>
+            CAUSE 1 | Uploaded:
             </p>
           </div>
         </div>
@@ -62,16 +53,10 @@ const Project = () => {
           </div>
           <div className="ml-4">
             <p className="text-base font-medium text-navy-700 dark:text-white">
-              Technology behind the Blockchain
+              CHARITY 2
             </p>
             <p className="mt-2 text-sm text-gray-600">
-              Project #1 .
-              <a
-                className="ml-1 font-medium text-brand-500 hover:text-brand-500 dark:text-white"
-                href=" "
-              >
-                See product details
-              </a>
+            CAUSE 2 | Uploaded:
             </p>
           </div>
         </div>
@@ -93,16 +78,10 @@ const Project = () => {
           </div>
           <div className="ml-4">
             <p className="text-base font-medium text-navy-700 dark:text-white">
-              Technology behind the Blockchain
+              CHARITY 3
             </p>
             <p className="mt-2 text-sm text-gray-600">
-              Project #1 .
-              <a
-                className="ml-1 font-medium text-brand-500 hover:text-brand-500 dark:text-white"
-                href=" "
-              >
-                See product details
-              </a>
+              CAUSE 3 | Uploaded: 
             </p>
           </div>
         </div>

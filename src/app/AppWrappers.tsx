@@ -6,7 +6,6 @@ import 'styles/Contact.css';
 // import 'styles/Plugins.css';
 import 'styles/MiniCalendar.css';
 import 'styles/index.css';
-
 import dynamic from 'next/dynamic';
 
 const _NoSSR = ({ children }) => <React.Fragment>{children}</React.Fragment>;
@@ -16,6 +15,5 @@ const NoSSR = dynamic(() => Promise.resolve(_NoSSR), {
 });
 
 export default function AppWrappers({ children }: { children: ReactNode }) {
-  // @ts-expect-error
   return <NoSSR>{children}</NoSSR>;
 }

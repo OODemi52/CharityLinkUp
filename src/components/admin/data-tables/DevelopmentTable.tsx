@@ -5,15 +5,7 @@ import { DiAndroid } from 'react-icons/di';
 import { DiWindows } from 'react-icons/di';
 import Card from 'components/card';
 import Progress from 'components/progress';
-
-import {
-  createColumnHelper,
-  flexRender,
-  getCoreRowModel,
-  getSortedRowModel,
-  SortingState,
-  useReactTable,
-} from '@tanstack/react-table';
+import { createColumnHelper, getCoreRowModel, getSortedRowModel, SortingState, useReactTable } from '@tanstack/react-table';
 
 type RowObj = {
   name: string;
@@ -135,66 +127,33 @@ function CheckTable(props: { tableData: any }) {
     <Card extra={'w-full h-full sm:overflow-auto px-6'}>
       <header className="relative flex items-center justify-between pt-4">
         <div className="text-xl font-bold text-navy-700 dark:text-white">
-          Check Table
+          Generate Report
         </div>
 
-        <CardMenu />
+        <button>
+          <CardMenu />
+        </button>
       </header>
 
       <div className="mt-8 overflow-x-scroll xl:overflow-x-hidden">
-        <table className="w-full">
-          <thead>
-            {table.getHeaderGroups().map((headerGroup) => (
-              <tr key={headerGroup.id} className="!border-px !border-gray-400">
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <th
-                      key={header.id}
-                      colSpan={header.colSpan}
-                      onClick={header.column.getToggleSortingHandler()}
-                      className="cursor-pointer border-b border-gray-200 pb-2 pr-4 pt-4 text-start dark:border-white/30"
-                    >
-                      <div className="items-center justify-between text-xs text-gray-200">
-                        {flexRender(
-                          header.column.columnDef.header,
-                          header.getContext(),
-                        )}
-                        {{
-                          asc: '',
-                          desc: '',
-                        }[header.column.getIsSorted() as string] ?? null}
-                      </div>
-                    </th>
-                  );
-                })}
-              </tr>
-            ))}
-          </thead>
-          <tbody>
-            {table
-              .getRowModel()
-              .rows.slice(0, 5)
-              .map((row) => {
-                return (
-                  <tr key={row.id}>
-                    {row.getVisibleCells().map((cell) => {
-                      return (
-                        <td
-                          key={cell.id}
-                          className="min-w-[150px] border-white/0 py-3  pr-4"
-                        >
-                          {flexRender(
-                            cell.column.columnDef.cell,
-                            cell.getContext(),
-                          )}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-          </tbody>
-        </table>
+      <h1 className="text-brandColor font-menlo font-black mr-auto hover:cursor-pointer">
+          Charity LinkUp
+      </h1>
+      <hr />
+          <br />
+          <br />
+          <h3 className="mb-2.5 text-4xl font-bold text-navy-700 dark:text-white">
+            Total Clicks
+          </h3>
+          <br />
+          <h3 className="mb-2.5 text-4xl font-bold text-navy-700 dark:text-white">
+            Total Views
+          </h3>
+          <br />
+          <h3 className="mb-2.5 text-4xl font-bold text-navy-700 dark:text-white">
+            Total Users
+          </h3>
+          <br />
       </div>
     </Card>
   );

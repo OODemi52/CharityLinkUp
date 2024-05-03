@@ -110,6 +110,7 @@ module.exports = {
         '97p': '97%',
         '98p': '98%',
         '99p': '99%',
+        '600': '600px', 
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -149,6 +150,8 @@ module.exports = {
     },
     colors: {
       white: '#ffffff',
+      black: '#000',
+      brandColor: '#4318FF',
       lightPrimary: '#F4F7FE',
       blueSecondary: '#4318FF',
       brandLinear: '#868CFF',

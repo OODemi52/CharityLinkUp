@@ -1,35 +1,39 @@
 'use client';
-// Layout components
+
 import { usePathname } from 'next/navigation';
-import { useContext, useState } from 'react';
+import { useState, useEffect } from 'react';
 import routes from 'routes';
-import {
-  getActiveNavbar,
-  getActiveRoute,
-  isWindowAvailable,
-} from 'utils/navigation';
+import { getActiveNavbar, getActiveRoute, isWindowAvailable } from 'utils/navigation';
+import { redirect } from 'next/navigation';
 import React from 'react';
-import { Portal } from '@chakra-ui/portal';
 import Navbar from 'components/navbar';
 import Sidebar from 'components/sidebar';
 import Footer from 'components/footer/Footer';
 
+import RootLayout from 'app/layout';
+
 export default function Admin({ children }: { children: React.ReactNode }) {
-  // states and functions
+
+  useEffect(() => {
+    const jwt = localStorage.getItem('accessToken');
+    if (!jwt) {
+      redirect('/auth/sign-in');
+    }
+  }, []);
+
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   if (isWindowAvailable()) document.documentElement.dir = 'ltr';
+  
   return (
+    <RootLayout>
     <div className="flex h-full w-full bg-background-100 dark:bg-background-900">
       <Sidebar routes={routes} open={open} setOpen={setOpen} variant="admin" />
-      {/* Navbar & Main Content */}
       <div className="h-full w-full font-dm dark:bg-navy-900">
-        {/* Main Content */}
         <main
           className={`mx-2.5  flex-none transition-all dark:bg-navy-900 
               md:pr-2 xl:ml-[323px]`}
         >
-          {/* Routes */}
           <div>
             <Navbar
               onOpenSidenav={() => setOpen(!open)}
@@ -46,5 +50,6 @@ export default function Admin({ children }: { children: React.ReactNode }) {
         </main>
       </div>
     </div>
+    </RootLayout>
   );
 }

@@ -1,12 +1,66 @@
-import avatar from '/public/img/avatars/avatar11.png';
+import avatar from '/public/img/avatars/default.png';
 import banner from '/public/img/profile/banner.png';
 import Card from 'components/card';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+interface UserDetails {
+    userid: string;
+    name: string;
+    email: string;
+    password: string;
+    imageurl: string;
+    role: string;
+    createdAt: Date;
+}
 
 const Banner = () => {
+  const [userDetails, setUserDetails] = useState<UserDetails>({
+    userid: '',
+    name: '',
+    email: '',
+    password: '',
+    imageurl: '',
+    role: '',
+    createdAt: new Date(),
+  });
+
+  useEffect(() => {
+    const accessToken = localStorage.getItem('accessToken');
+
+    const fetchUserDetails = async () => {
+      try {
+        const response = await fetch('/api/getUser', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+
+        if (response.ok) {
+          const userDetails = await response.json();
+          setUserDetails(userDetails);
+          console.log('User details set!');
+        } else {
+          const error = await response.json();
+          console.error('Error fetching user details:', error);
+          alert('Error fetching user details! Please try again.');
+        }
+      } catch (error) {
+        console.error('Error fetching user details:', error);
+        alert('Error fetching user details! Please try again.');
+      }
+    };
+
+    if (accessToken) {
+      fetchUserDetails();
+    }
+
+  }, []);
+
   return (
     <Card extra={'items-center w-full h-full p-[16px] bg-cover'}>
-      {/* Background and profile */}
+      <h1 className="text-4xl font-semibold text-navy-700 dark:text-white my-4">Profile</h1>
       <div
         className="relative mt-1 flex h-32 w-full justify-center rounded-xl bg-cover"
         style={{ backgroundImage: `url(${banner.src})` }}
@@ -16,41 +70,22 @@ const Banner = () => {
             width="2"
             height="20"
             className="h-full w-full rounded-full"
-            src={avatar}
+            src={ userDetails.imageurl ? userDetails.imageurl : avatar }
             alt=""
           />
         </div>
       </div>
 
-      {/* Name and position */}
       <div className="mt-16 flex flex-col items-center">
         <h4 className="text-xl font-bold text-navy-700 dark:text-white">
-          Adela Parkson
+          { userDetails.name }
         </h4>
-        <h5 className="text-base font-normal text-gray-600">Product Manager</h5>
+        <h5 className="text-base font-normal text-gray-600">ROLE: { userDetails.role.toUpperCase() }</h5>
       </div>
-
-      {/* Post followers */}
-      <div className="mb-3 mt-6 flex gap-4 md:!gap-14">
-        <div className="flex flex-col items-center justify-center">
-          <h4 className="text-2xl font-bold text-navy-700 dark:text-white">
-            17
-          </h4>
-          <p className="text-sm font-normal text-gray-600">Posts</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <h4 className="text-2xl font-bold text-navy-700 dark:text-white">
-            9.7K
-          </h4>
-          <p className="text-sm font-normal text-gray-600">Followers</p>
-        </div>
-        <div className="flex flex-col items-center justify-center">
-          <h4 className="text-2xl font-bold text-navy-700 dark:text-white">
-            434
-          </h4>
-          <p className="text-sm font-normal text-gray-600">Following</p>
-        </div>
-      </div>
+      <div className="flex flex-col items-center mt-8 border-t border-gray-100 w-full" ></div>
+        <h6 className="text-xs font-bold text-navy-700 dark:text-white mt-10">
+          User Since: { new Date(userDetails.createdAt).toLocaleDateString('en-US') }
+        </h6>
     </Card>
   );
 };
